@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Reboot Javascript</title>
+</head>
+<body class="body-class" id="body">
+    
+    <div class="mt-2 text-center">
+        <img src="logo-code.png" alt="Logo Code" width="60px" height="60px">
+        <h1>Treinamento de JavaScript</h1>
+    </div>
+
+    <div class="mt-5 container">
+
+        <div class="text-center mb-3">
+            <h1>Adicionando Elementos em lista</h1>
+        </div>
+       
+        <div id="inputItem" class="row justify-content-center form-group">
+            <input type="text"  class="col-6 form-control mr-3" placeholder="Digite aqui">
+            <button onclick="addItem()" class="btn btn-primary col-1">Enviar</button>
+        </div>
+
+        <div id="listItem" class="row justify-content-center">
+            <ul class="list-group">
+                <li class="list-group-item list" >
+                    Lista Integração Code
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div id="image" class="text-center mb-3">
+            <h2>Título da imagem</h2>
+            <img 
+                src="https://media-exp1.licdn.com/dms/image/C4E0BAQHJVUdjXcahnQ/company-logo_200_200/0?e=2159024400&v=beta&t=jzN30LRzuT9F1uzXKHmVyd_KzeZOvH2tfhj22z2AWfQ" 
+                id="image" 
+                style="height:200px;"
+            >
+            <input 
+                type="text" 
+                class="mx-auto mt-3 form-control col-5" 
+                id="inputTitle"
+                placeholder="Digite para mudar o título">
+
+            <button 
+                class="btn btn-primary mt-3" 
+                onclick="setTitle()" 
+                type="submit"
+            >
+                Alterar Título
+            </button>
+
+            <button 
+                class="btn btn-primary mt-3" 
+                onclick="changeUrlImg()" 
+                type="submit"
+            >
+                Mudar Imagem
+            </button>
+        </div>
+
+        <hr>
+
+        <h3 class="text-center mb-4">Alterações na página</h3>
+        <div class="row">
+            <button 
+                type="submit" 
+                id="btnLista" 
+                onclick="changeClass()" 
+                class="mx-auto btn btn-primary mb-3">
+                Trocar cor de fundo
+            </button>
+        </div>
+
+        <hr>
+        <h3 class="text-center mb-4">Mascara com javascript</h3>
+        <div class="row mb-5">
+            <div class="mx-auto form-group w-25">
+                <input 
+                type="text" 
+                class="form-control" 
+                maxlength="10" onkeypress="mascaraData(this)"
+                placeholder="Digite um valor">
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    
+    <script 
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous">
+    </script>
+    
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous">
+    </script>
+
+    <script 
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous">
+    </script>
+
+</body>
+</html>
